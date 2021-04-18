@@ -1,0 +1,50 @@
+#lista2 {
+    counter-reset: li; 
+    list-style: none; 
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgb(255, 255, 255);
+}
+
+#lista2 ol {
+    margin: 0 0 0 2em; 
+}
+
+#lista2 li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all  ebackground-color 2s ease-out;;   
+}
+
+#lista2 li:hover{
+    background: rgb(255, 255, 255);
+}
+
+#lista2 li:hover:before{
+    transform: rotate(360deg);  
+}
+
+#lista2 li:before{
+    
+    counter-increment: li;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #ffffff;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
